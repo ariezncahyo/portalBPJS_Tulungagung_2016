@@ -35,8 +35,8 @@ if(isset($_POST['ganti_admin']))
 {
     $data = $_POST['JmlLoket'];
     
-    //mengecek data jumlah loket di tabel "jmlloket"
-    $kueri  = mysql_query("SELECT Jumlah FROM jmlloket");
+    //mengecek data jumlah loket di tabel "bpjs_jmlloket"
+    $kueri  = mysql_query("SELECT Jumlah FROM bpjs_jmlloket");
     $loket  = mysql_fetch_assoc($kueri);
     $jumlah = $loket['Jumlah'];
     
@@ -45,7 +45,7 @@ if(isset($_POST['ganti_admin']))
     if($data === "tambah" && $jumlah < 6)
     {
         $tambah_loket = $jumlah + 1;
-        $kueri = mysql_query("UPDATE jmlloket SET `Jumlah`='$tambah_loket' WHERE `Jumlah`='$jumlah'");
+        $kueri = mysql_query("UPDATE bpjs_jmlloket SET `Jumlah`='$tambah_loket' WHERE `Jumlah`='$jumlah'");
         if($kueri)
             echo "berhasil";
         else
@@ -56,7 +56,7 @@ if(isset($_POST['ganti_admin']))
     else if($data === "kurang" && $jumlah > 4)
     {
         $kurang_loket = $jumlah - 1;
-        $kueri = mysql_query("UPDATE jmlloket SET `Jumlah`='$kurang_loket' WHERE `Jumlah`='$jumlah'");
+        $kueri = mysql_query("UPDATE bpjs_jmlloket SET `Jumlah`='$kurang_loket' WHERE `Jumlah`='$jumlah'");
         if($kueri)
             echo "berhasil";
         else

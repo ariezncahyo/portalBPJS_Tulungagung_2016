@@ -14,7 +14,7 @@ else if(isset($_SESSION['paging-limit']))
 {
     $pagingbts = $_SESSION['paging-limit'];
 }
-$limit_loket = mysql_fetch_assoc(mysql_query("SELECT Jumlah FROM jmlloket"));
+$limit_loket = mysql_fetch_assoc(mysql_query("SELECT Jumlah FROM bpjs_jmlloket"));
 $jml_loket  = $limit_loket['Jumlah'];
 $paging     = mysql_query("SELECT * FROM bpjs_feedback WHERE `loket`<=$jml_loket");
 $jmlbaris   = mysql_num_rows($paging);

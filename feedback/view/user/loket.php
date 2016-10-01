@@ -1,5 +1,5 @@
 <?php
-$dataLoket = mysql_query("SELECT `Jumlah` FROM jmlloket");
+$dataLoket = mysql_query("SELECT `Jumlah` FROM bpjs_jmlloket");
 $dataJmlLoket = mysql_fetch_assoc($dataLoket);
 $jmlLoket       = $dataJmlLoket['Jumlah'];
 if($jmlLoket == 4){

@@ -5,8 +5,8 @@ include "../../controller/koneksi.php";
 
 if(isset($_POST['Feedback']))
 {
-    //kueri untuk mengambil data jumlah loket pada kolom Jumlah pada tabel jmlloket
-    $hitungloket    = mysql_fetch_assoc(mysql_query("SELECT Jumlah FROM jmlloket"));
+    //kueri untuk mengambil data jumlah loket pada kolom Jumlah pada tabel bpjs_jmlloket
+    $hitungloket    = mysql_fetch_assoc(mysql_query("SELECT Jumlah FROM bpjs_jmlloket"));
     //mengambil value dari kolom Jumlah
     $hitungloket    = $hitungloket['Jumlah'];
     $data           = $_POST['Feedback'];
