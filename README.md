@@ -16,3 +16,7 @@ Petunjuk Instalasi :
  2. kemudian masukkan kode sebegai berikut :  
  ```php -q C:xampp\htdocs\portalBPJS_Tulungagung_2016\feedback\controller\ws-user.php```  
  ![](https://raw.githubusercontent.com/dhanyn10/portalBPJS_Tulungagung_2016/master/bpjs_tulungagung_2016_1.png)
+ 
+ # Informasi Login Administrator  
+ Username : ```administrator```  
+ password : ```admin_123```  
