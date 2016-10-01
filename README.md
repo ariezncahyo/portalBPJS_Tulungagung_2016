@@ -20,5 +20,5 @@ Petunjuk Instalasi :
  ![](https://raw.githubusercontent.com/dhanyn10/portalBPJS_Tulungagung_2016/master/bpjs_tulungagung_2016_1.png)
  
  # Informasi Login Administrator  
- Username : ```administrator```  
- password : ```admin_123```  
+ Username   :   ```administrator```  
+ password   :   ```admin_123```  
